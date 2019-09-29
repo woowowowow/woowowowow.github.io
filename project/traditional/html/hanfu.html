@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>初识汉服</title>
+    <!--图标-->
+    <link rel="shortcut icon" href="../images/china.ico">
+    <link rel="stylesheet" href="../css/son_public.css">
+    <link rel="stylesheet" href="../css/hanfu.css">
+    <script src="../js/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+<!---------------------header--------------------->
+<div class="nav_father">
+    <div class="nav">
+        <div class="logo">
+                <h1>
+                    <a href="index.html"><img src="../images/logo.png" alt="logo"></a>
+                </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="hanfu.html">汉服</a></li>
+                <li><a href="gushiwen.html" target="_blank">诗词</a></li>
+                <li><a href="shuhua.html" target="_blank">书画</a></li>
+                <li><a href="meishi.html" target="_blank">美食</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <ul class="login_ul">
+                <li>
+                    <a href="https://www.yiban.cn/login?go=http%3A%2F%2Fwww.yiban.cn%2F" target="_blank">
+                        登录
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.yiban.cn/user/reg/index?type=baseinfo" target="_blank">
+                        注册
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" class="input" value="搜索关键词..." onfocus="if(this.value==='搜索关键词...'){this.value=''}" onblur="if(this.value===''){this.value='搜索关键词...'}" style="color:white;">
+            <a href="#">
+                <input type="submit" class="search-button" value="">
+            </a>
+        </div>
+    </div>
+</div>
+<div class="zhanwei"></div>
+<!---------------------content-------------------->
+<div class="content">
+    <div class="content_nav">
+        <ul>
+            <li class="item t1 on">
+                <i></i>
+                <em></em>
+            </li>
+            <li class="item t2">
+                <i></i>
+                <em></em>
+            </li>
+            <li class="item t3">
+                <i></i>
+                <em></em>
+            </li>
+            <li class="item t4">
+                <i></i>
+                <em></em>
+            </li>
+        </ul>
+    </div>
+    <div class="box">
+        <div class="p p1 show">
+            <span class="name"></span>
+            <img src="../images/hanfu/hanfu_1.png" alt="">
+        </div>
+        <div class="p p2">
+            <span class="name"></span>
+            <img src="../images/hanfu/hanfu_2.png" alt="">
+        </div>
+        <div class="p p3">
+            <span class="name"></span>
+            <img src="../images/hanfu/hanfu_3.png" alt="">
+        </div>
+        <div class="p p4">
+            <span class="name"></span>
+            <img src="../images/hanfu/hanfu_4.png" alt="">
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.content_nav li').on('click', function () {
+            $(this).addClass('on').siblings().removeClass('on');
+            $('.p').eq($(this).index()).addClass('show').siblings().removeClass('show');
+        })
+    })
+</script>
+<!--褙子、曲裾、襦裙、袄裙、比甲、圆领袍、大袖衫、马面裙-->
+<!---------------------container------------------>
+<div class="container">
+    <ul>
+        <li>
+            <div class="con_bg"></div>
+            <div class="con_item">
+                <div class="item_word">
+                    <a href="#"><img src="../images/hanfu/襦裙字体.png" alt="字体背景"/></a>
+                    <p>襦裙是汉服的一种，上身穿的短衣和下身束的裙子合称襦裙，是典型的“上衣下裳”衣制。上衣叫做“襦”，长度较短，一般长不过膝，下身则叫“裙”。可见，“襦裙”其实是两种衣物的合称。襦裙出现在战国时期，兴起于魏晋南北朝。以裙腰之高低，将襦裙分为齐腰襦裙，高腰襦裙，齐胸襦裙。以领子的式样之分，将襦裙分为交领襦裙和直领襦裙。按是否夹里的区别，将襦裙分为单襦和复襦，单襦近于衫，复襦则近于袄。</p>
+                </div>
+                <div class="item_kinds">
+                    <span><img src="../images/hanfu/襦裙_3.jpg" /></span>
+                    <span><img src="../images/hanfu/襦裙_4.jpg" /></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="con_bg"></div>
+            <div class="con_item">
+                <div class="item_word">
+                    <a href="#"><img src="../images/hanfu/曲裾字体.png" alt="字体背景"/></a>
+                    <p>
+                        曲裾是汉服的一种款式。按照《礼记》记载，深衣一大特点是“续衽钩边”，也就是说“这种服式的共同特点是都有一幅向后交掩的曲裾。”
+                    </p>
+                    <p>
+                        曲裾出现，与汉族衣冠最初没有连裆的罩裤有关，下摆有了这样几重保护就符合理并合礼得多，因此，曲裾深衣在未发明袴的先秦至汉代较为流行。开始男女均可穿着,慢慢地，男子曲裾越来越少，曲裾作为女子衣装保留的时间相对长一些。
+                    </p>
+                </div>
+                <div class="item_kinds">
+                    <span><img src="../images/hanfu/曲裾_1.jpg" /></span>
+                    <span><img src="../images/hanfu/曲裾_2.jpg" /></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="con_bg"></div>
+            <div class="con_item">
+                <div class="item_word">
+                    <a href="#"><img src="../images/hanfu/褙子字体.png" alt="字体背景"/></a>
+                    <p>
+                        褙子，又名背子、绰子，绣䘿。是汉民族汉服传统服饰的一种。其样式以直领对襟为主，腋下开胯，腰间用勒帛系束，下长过膝，逐渐成为后世女子的一种常礼服。宽袖褙子，只在衣襟上，以花边作装饰，并且领子一直通到下摆。窄袖褙子，则袖口及领子都有装饰花边，领子花边仅到胸部。
+                    </p>
+                    <p>
+                        宋代受程朱理学的影响，人们的审美观追求质朴，宋代男子的褙子常衬于公服内，很少外穿。女子的褙子则外穿，并成为典型的常服款式。
+                    </p>
+                </div>
+                <div class="item_kinds">
+                    <span><img src="../images/hanfu/褙子_1.jpg" /></span>
+                    <span><img src="../images/hanfu/褙子_2.jpg" /></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="con_bg"></div>
+            <div class="con_item">
+                <div class="item_word">
+                    <a href="#"><img src="../images/hanfu/比甲字体.png" alt="字体背景"/></a>
+                    <p>
+                        比甲是一种无袖、无领的对襟两侧开叉及至膝下的马甲，其样式通常较后来的马甲要长。马甲的主要功能是保暖，优点是方便，比甲显然继承了这一点且发扬光大，它可以穿在外衣之内，也可以穿在内衣外面。这种衣服最初是宋朝的一种汉服款式，无袖长罩衫，又叫做“背心”。后来传入蒙古。据《元史》载：“又制一衣，前有裳无衽，后长倍于前，亦去领袖，缀以两襻，名曰‘比甲’，以便弓马，时皆仿之。”
+                    </p>
+                </div>
+                <div class="item_kinds">
+                    <span><img src="../images/hanfu/比甲_1.jpg" /></span>
+                    <span><img src="../images/hanfu/比甲_2.jpg" /></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="con_bg"></div>
+            <div class="con_item">
+                <div class="item_word">
+                    <a href="#"><img src="../images/hanfu/圆领袍字体.png" alt="字体背景"/></a>
+                    <p>
+                        圆领袍最早出现在商代，是中国汉民族的传统服饰之一。汉代随着服饰逐渐统一，圆领袍主要作为内衣穿着。溯其由传人以至兴盛，由军用以至民服，历史悠长，变化复杂，圆领亦称团领，实为无领型领式。衣领形似圆形，内覆硬衬，领口钉有纽扣。
+                    </p>
+                    <p>
+                        宋朝以后，圆领袍成为官员们的正式服装之一，在后来的明朝也被大量运用，明朝的圆领袍、配上补，成为了分辨官位阶级的最方便的方式。
+                    </p>
+                </div>
+                <div class="item_kinds">
+                    <span><img src="../images/hanfu/圆领袍_1.jpg" /></span>
+                    <span><img src="../images/hanfu/圆领袍_2.jpg" /></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="con_bg"></div>
+            <div class="con_item">
+                <div class="item_word">
+                    <a href="#"><img src="../images/hanfu/大袖衫字体.png" alt="字体背景"/></a>
+                    <p>
+                        汉服大袖衫，就不能不提《簪花仕女图》。周昉的《簪花仕女图》中，美人着踝肩长裙，上身直披一件大袖纱罗衫。由于画家手法写实，既如实地描摹出唐代细腻透明的衣料，又逼真地描绘出女子那柔润的肩和手臂。实际上大袖衫一直沿用至明末，配霞帔，又称大袖，大衫。
+                    </p>
+                    <p>
+                        盛唐以后，胡服的影响逐渐减弱，女服的样式日趋宽大。到了中晚唐时期，这种特点更加明显，一般妇女服装，袖宽往往四尺以上。
+                    </p>
+                </div>
+                <div class="item_kinds">
+                    <span><img src="../images/hanfu/大袖衫_1.jpg" /></span>
+                    <span><img src="../images/hanfu/大袖衫_2.jpg" /></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="con_bg"></div>
+            <div class="con_item">
+                <div class="item_word">
+                    <a href="#"><img src="../images/hanfu/袄裙字体.png" alt="字体背景"/></a>
+                    <p>
+                        袄裙，是对古代汉族女子上身穿袄，下身穿裙的统称。裙袄着装，从唐代开始就有衣物疏记录，一直到民国。现代一般谈论袄裙时候指的是明代的裙袄着装。
+                    </p>
+                    <p>
+                        马面裙，又名“马面褶裙”，中国传统服饰的一种，前后共有四个裙门，两两重合，侧面打裥，中间裙门重合而成的光面，俗称“马面”。马面裙起源于契丹，游牧民族由于要骑马，所以要开四个裙门，前后方便搭在马上，左右方便岔开腿，裙门之间相互叠压又不至于令裙子开的太大，露出腿来，是一种十分实用的服饰。
+                    </p>
+                </div>
+                <div class="item_kinds">
+                    <span><img src="../images/hanfu/袄裙_2.jpg" /></span>
+                    <span><img src="../images/hanfu/马面裙.jpg" /></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                    <span class="img_mask"><a href="#"></a></span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<footer>
+    <div class="footer_container">
+        <div class="about-yiban">
+            <a href="#" target="_blank">用户协议</a><span>|</span>
+            <a href="#" target="_blank">开放平台</a><span>|</span>
+            <a href="#" target="_blank">校园招聘</a><span>|</span>
+            <a href="#" target="_blank">社会招聘</a><span>|</span>
+            <a href="#" target="_blank">联系我们</a><span>|</span>
+            <a href="#" target="_blank">客服中心</a><span>|</span>
+            <a href="#" target="_blank">手机易班</a><span>|</span>
+            <a href="#" target="_blank">合作伙伴</a><span>|</span>
+            <a href="#" target="_blank">函件查询</a><span>|</span>
+            <a href="#" target="_blank">证书查询</a>
+        </div>
+        <div class="yiban-brand">
+            <a href="#" target="_blank" class="brand-_youke icon"></a>
+            <a href="#" target="_blank" class="brand_yiban icon"></a>
+            <a href="#" target="_blank" class="brand_k icon"></a>
+            <a href="#" target="_blank" class="brand_boya icon"></a>
+            <a href="#" target="_blank" class="brand_zz icon"></a>
+            <a href="#" target="_blank" class="brand_hetaoshu icon"></a>
+        </div>
+        <div class="yiban-logal">
+            <p class="copyright" style="color: #324f68 !important;font-size: 13px !important;">
+                违法和不良信息举报电话：021-6016000    Copyright &copy 2009-2019
+                <a href="#">YIBAN</a>
+                . All Rights Reserved.
+                <a href="#" target="_blank">沪ICP备15046050号-6</a>
+                <br>
+                教育部易班发展中心
+                上海易班企业发展有限公司 版权所有
+            </p>
+            <p class="copyright" style="margin-top: 15px;">
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-1.png" title="中国互联网违法和不良信息举报中心"></a>
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-2.jpg" style="height:36px;" title="网上有害信息举报专区"></a>
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-3.png" title="上海市互联网违法和不良信息举报中心"></a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

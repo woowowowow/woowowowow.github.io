@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>传统文化</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <!--图标-->
+    <link rel="shortcut icon" href="../images/china.ico">
+    <script src="../js/jquery-3.3.1.js" ></script>
+
+</head>
+<body>
+<!---------------------header-------------------->
+<div class="header">
+    <div class="nav-father">
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>
+                        <img src="../images/logo.png" alt="logo">
+                    </h1>
+                </a>
+            </div>
+            <div class="login">
+                <ul class="login_ul">
+                    <li>
+                        <a href="https://www.yiban.cn/login?go=http%3A%2F%2Fwww.yiban.cn%2F" target="_blank">登录</a>
+                    </li>
+                    <li>
+                        <a href="https://www.yiban.cn/user/reg/index?type=baseinfo" target="_blank">注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" class="input" value="搜索关键词..." onfocus="if(this.value==='搜索关键词...'){this.value=''}" onblur="if(this.value===''){this.value='搜索关键词...'}" style="color:white;">
+                <a href="#">
+                    <input type="submit" class="search-button" value="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="zhanwei"></div>
+    <div class="banner">
+        <div class="banner_left">
+            <img src="../images/index/故宫-1.jpg" alt="故宫背景"/>
+            <div class="ul_father"></div>
+            <ul class="category">
+                    <li><a href="index.html"><span>首页</span></a></li>
+                    <li><a href="hanfu.html" target="_blank"><span>初&nbsp;识&nbsp;汉&nbsp;服</span></a></li>
+                    <li><a href="gushiwen.html" target="_blank"><span>魅&nbsp;力&nbsp;诗&nbsp;词</span></a></li>
+                    <li><a href="shuhua.html" target="_blank"><span>古&nbsp;逸&nbsp;书&nbsp;画</span></a></li>
+                    <li id="last_child"><a href="meishi.html" target="_blank"><span>传&nbsp;统&nbsp;美&nbsp;食</span></a></li>
+            </ul>
+        </div>
+        <div class="banner_right">
+            <div id="wrap">
+                <a href="#" class="hb" style="transform: translate3d(-754px, 0px, 0px);">
+                    <div class="c">
+                        <img src="../images/index/汉服_2.jpg" alt="">
+                        <div class="txt">
+                            <h1>红衣女子</h1><br/>
+                            <p>身着红色韩富春长裙的女子，拿着扇子，摆出婀娜的舞姿。</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="fullBg">
+                    <img src="../images/index/汉服_2.jpg" alt="">
+                </div>
+
+
+                <a href="#" class="hb" style="transform: translate3d(-753.988px, 0px, 0px);">
+                    <div class="c">
+                        <img src="../images/index/古画_1.jpg" alt="">
+                        <div class="txt">
+                            <h1>水乡画幅</h1><br/>
+                            <p>整体呈浅色调的绘画风格，体现水乡静谧的美好生活。</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="fullBg">
+                    <img src="../images/index/古画_1.jpg" alt="">
+                </div>
+
+
+                <a href="#" class="hb" style="transform: translate3d(-753.988px, 0px, 0px);">
+                    <div class="c">
+                        <img src="../images/index/古诗_1.jpg" alt="">
+                        <div class="txt">
+                            <h1>魅力诗词</h1><br/>
+                            <p>《春日游曲江》把思家的情感推向极致。令人魂牵梦萦欲罢不能。</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="fullBg">
+                    <img src="../images/index/古诗_1.jpg" alt="">
+                </div>
+
+
+                <a href="#" class="hb" style="transform: translate3d(-753.988px, 0px, 0px);">
+                    <div class="c">
+                        <img src="../images/index/美食_1.jpg" alt="">
+                        <div class="txt">
+                            <h1>角黍、筒粽</h1><br/>
+                            <p>由粽叶包裹糯米蒸制而成，是中华民族传统节庆食物之一。</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="fullBg">
+                    <img src="../images/index/美食_1.jpg" alt="">
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    var docWidth = $('body').width(),
+                        $wrap = $('#wrap'),
+                        $images = $('#wrap .hb'),
+                        slidesWidth = $wrap.width();
+                    $(window).on('resize', function(){
+                        docWidth = $('body').width();
+                        slidesWidth = $wrap.width();
+                    });
+
+                    $(document).mousemove(function(e) {
+                        var mouseX = e.pageX-1000,
+                            offset = mouseX / docWidth * slidesWidth - mouseX / 2 ;
+
+                        $images.css({
+                            '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+                            'transform': 'translate3d(' + -offset + 'px,0,0)'
+                        });
+                    });
+                });
+            </script>
+        </div>
+    </div>
+</div>
+<!---------------------content------------------->
+<div class="content">
+    <div class="content_body">
+        <div class="content_left">
+            <div class="item">
+                <div class="item-title">
+                    <span class="tit-span">
+                        <img src="../images/index/public-icon1.png"/>
+                    </span>
+                    <span class="word">汉</span>
+                    <span class="word">服</span>
+                    <span class="word">之</span>
+                    <span class="word">美</span>
+                    <span class="tit-span">
+                    <img src="../images/index/public-icon2.png"/>
+                </span>
+                </div>
+                <div class="item-content item_1">
+                    <a href="hanfu.html" target="_blank">
+                        <div class="leader">
+                            <p>
+                                汉服，全称是“汉民族传统服饰”，在汉族的主要居住区，通过自然演化而形成的具有独特汉民族风貌性格，明显区别于其他民族的传统服装和配饰体系，承载了汉族的染织绣等杰出工艺和美学，传承了30多项中国非物质文化遗产以及受保护的中国工艺美术。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <span class="tit-span">
+                        <img src="../images/index/public-icon1.png"/>
+                    </span>
+                    <span class="word">诗</span>
+                    <span class="word">词</span>
+                    <span class="word">之</span>
+                    <span class="word">美</span>
+                    <span class="tit-span">
+                        <img src="../images/index/public-icon2.png"/>
+                    </span>
+                </div>
+                <div class="item-content item_2">
+                    <a href="gushiwen.html" target="_blank">
+                        <div class="leader">
+                            <p>
+                                喜欢诗词，喜欢细细地品读，透过这些篇章，我看到了那条铺满鲜花的田园小径，看到了那座照亮旅途的航海之灯，看到了那扇瞩望环宇的心灵之窗。轻吟浅唱，我愿意，愿意倘徉在这诗意的生活里，静静地感悟着生命之美。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <span class="tit-span">
+                        <img src="../images/index/public-icon1.png"/>
+                    </span>
+                    <span class="word">书</span>
+                    <span class="word">画</span>
+                    <span class="word">之</span>
+                    <span class="word">美</span>
+                    <span class="tit-span">
+                        <img src="../images/index/public-icon2.png"/>
+                    </span>
+                </div>
+                <div class="item-content item_3">
+                    <a href="shuhua.html" target="_blank">
+                        <div class="leader">
+                            <p>
+                                中国五千年璀璨的文明及无与伦的丰富文字记载都已为世人所认可，在这一博大精深的历史长河中，中国的书画艺术以其独特的艺术形式和艺术语言再现了这一历时性的转变过程。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-title">
+                    <span class="tit-span">
+                        <img src="../images/index/public-icon1.png"/>
+                    </span>
+                    <span class="word">食</span>
+                    <span class="word">物</span>
+                    <span class="word">之</span>
+                    <span class="word">美</span>
+                    <span class="tit-span">
+                        <img src="../images/index/public-icon2.png"/>
+                    </span>
+                </div>
+                <div class="item-content item_4">
+                    <a href="meishi.html" target="_blank">
+                        <div class="leader">
+                            <p>
+                                东坡肉，又名滚肉、东坡焖肉，是眉山和江南地区特色传统名菜。东坡肉在浙菜、川菜、鄂菜等菜系中都有，且各地做法也有不同，有先煮后烧的，有先煮后蒸的，有直接焖煮收汁的。
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content_right">
+            <div class="con_right_top">
+                <div class="con_right_title">
+                    <span class="tit-img1"><img src="../images/index/public-icon1.png" alt=""></span>
+                    <p class="word">热点时讯</p>
+                    <span class="tit-img2"><img src="../images/index/public-icon2.png" alt=""></span>
+                    <a href="#">更多>></a>
+                </div>
+                <div class="con_right_content con1">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../images/index/news_1.jpg" alt="">
+                            </a>
+                            <div class="news">
+                                <h3><a href="#" class="tips">厦门实验中学学子穿上汉服致敬无悔青春，暖了厦门整个冬天！</a></h3><br/>
+                                <p>
+                                    十九大以来，国家多次提出要增强我们的文化自信，传承我们的优秀传统文化。今天特此为厦门实验中学高三年学子举办这场盛大、意义非凡的传统成人礼，致敬无悔青春。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/index/news_2.jpg" alt="">
+                            </a>
+                            <div class="news">
+                                <h3><a href="#">华裳九州联合6大品牌共同登上了纽约时代广场的路透社大屏</a></h3><br/>
+                                <p>这次中国的华服走出国门，旨在让国际了解中国的华服特色，国内优秀的华服品牌，感受华裳之美！</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/index/news_3.jpg" alt="">
+                            </a>
+                            <div class="news">
+                                <h3><a href="#">近千年来，中国最美的100句古诗词，不得不背诵</a></h3><br/>
+                                <p>
+                                    很多时候，有些诗词，像看不懂的画面，存在心里。忽然有一天，你遇到了某个风景，某份心情，就忽然明白那首诗，那句词，那幅画。那种感觉，是穿越千年的心意相通，它是如此恰当，以至于无法用其他的词语形容。记住了词，记住了景，也记住了情。</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../images/index/news_4.jpg" alt="">
+                            </a>
+                            <div class="news">
+                                <h3><a href="#">在习主席一带一路的活动中，中书协刘福友老师作品作为国礼赠送
+                                </a></h3><br/>
+                                <p>
+                                    在习主席一带一路的活动中，中书协刘福友老师书法作品：（高瞻远瞩）（厚德载物）（高瞻远瞩）（室雅兰香）分别由外交部，新闻部长作为国礼赠与：斯里兰卡驻华大使鲁纳塞纳 • 科迪图瓦阁下、墨西哥信任驻华大使内尔纳先生、菲律宾驻华大使罗马纳先生、巴基斯坦驻华大使马苏德 • 哈立德先生收藏！</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="con_right_bottom">
+                <div class="con_right_title">
+                    <span class="tit-img1"><img src="../images/index/public-icon1.png" alt=""></span>
+                    <p class="word">热点视频</p>
+                    <span class="tit-img2"><img src="../images/index/public-icon2.png" alt=""></span>
+                    <a href="#">更多>></a>
+                </div>
+                <div class="con_right_content con2">
+                    <ul>
+                        <li>
+                            <img src="../images/index/video_1.jpg" alt="">
+                            <a href="#">
+                                <div class="mask">
+                                    <img src="../images/index/视频.png" alt="">
+                                    <p>查看详情</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/index/video_2.jpg" alt="">
+                            <a href="#">
+                                <div class="mask">
+                                    <img src="../images/index/视频.png" alt="">
+                                    <p>查看详情</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <img src="../images/index/video_3.jpg" alt="">
+                            <a href="#">
+                                <div class="mask">
+                                    <img src="../images/index/视频.png" alt="">
+                                    <p>查看详情</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------add----------------------->
+<div class="add">
+    <div class="add_img">
+        <img src="../images/index/底部宣传.jpg" alt="宣传"/>
+    </div>
+    <div class="link">
+        <div class="link_title">
+            <img src="../images/index/友情链接_1.png" alt="">
+        </div>
+        <div class="link_body">
+            <ul>
+                <li><a href="#">中国文化部</a></li>
+                <li><a href="#">中国文明网</a></li>
+                <li><a href="#">中国文化市场网</a></li>
+                <li><a href="#">中国文联网</a></li>
+                <li><a href="#">中华诗词学会</a></li>
+                <li><a href="#">中国美术家协会</a></li>
+                <li><a href="#">中国书法家协会</a></li>
+                <li><a href="#">中国戏剧家协会</a></li>
+                <li><a href="#">国家京剧院</a></li>
+                <li><a href="#">中国艺术研究院</a></li>
+                <li><a href="#">国家文物局</a></li>
+                <li><a href="#">故宫博物院</a></li>
+                <li><a href="#">中国国家画院</a></li>
+                <li><a href="#">传统文化研究会</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!---------------------footer-------------------->
+<footer>
+    <div class="footer_container">
+        <div class="about-yiban">
+            <a href="#" target="_blank">用户协议</a><span>|</span>
+            <a href="#" target="_blank">开放平台</a><span>|</span>
+            <a href="#" target="_blank">校园招聘</a><span>|</span>
+            <a href="#" target="_blank">社会招聘</a><span>|</span>
+            <a href="#" target="_blank">联系我们</a><span>|</span>
+            <a href="#" target="_blank">客服中心</a><span>|</span>
+            <a href="#" target="_blank">手机易班</a><span>|</span>
+            <a href="#" target="_blank">合作伙伴</a><span>|</span>
+            <a href="#" target="_blank">函件查询</a><span>|</span>
+            <a href="#" target="_blank">证书查询</a>
+        </div>
+        <div class="yiban-brand">
+            <a href="#" target="_blank" class="brand-_youke icon"></a>
+            <a href="#" target="_blank" class="brand_yiban icon"></a>
+            <a href="#" target="_blank" class="brand_k icon"></a>
+            <a href="#" target="_blank" class="brand_boya icon"></a>
+            <a href="#" target="_blank" class="brand_zz icon"></a>
+            <a href="#" target="_blank" class="brand_hetaoshu icon"></a>
+        </div>
+        <div class="yiban-logal">
+            <p class="copyright" style="color: #324f68 !important;font-size: 13px !important;">
+                违法和不良信息举报电话：021-6016000    Copyright &copy 2009-2019
+                <a href="#">YIBAN</a>
+                . All Rights Reserved.
+                <a href="#" target="_blank">沪ICP备15046050号-6</a>
+                <br>
+                教育部易班发展中心
+                上海易班企业发展有限公司 版权所有
+            </p>
+            <p class="copyright" style="margin-top: 15px;">
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-1.png" title="中国互联网违法和不良信息举报中心"></a>
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-2.jpg" style="height:36px;" title="网上有害信息举报专区"></a>
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-3.png" title="上海市互联网违法和不良信息举报中心"></a>
+            </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
