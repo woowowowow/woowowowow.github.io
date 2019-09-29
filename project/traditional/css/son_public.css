@@ -1,0 +1,172 @@
+﻿/*----------------------cssReset------------------------*/
+Article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;}    /*将h5元素默认的内联元素转为块状元素*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,th,td{ margin: 0; }
+ul, ol{  margin: 0; padding: 0; list-style:none; }
+img{  border: none; vertical-align: center;}
+em{ font-style: normal; }
+a{ text-decoration:none; color: white;}
+table{ border-collapse: collapse; }
+input,textarea,button{ outline:none; }
+textarea{ resize: none; overflow: auto; }
+body{
+	font-size: 12px;
+	font-family: "方正姚体", Geneva, Arial, Helvetica, sans-serif;
+	background-image: url("../images/body.png");
+}
+
+#main,footer{ width:1240px; margin: 0 auto; }
+
+
+/*----------------------header-----------------------*/
+.zhanwei{/*占位*/
+    width: 100%;
+    height: 60px;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    margin:0 auto;
+    z-index: 99;
+}
+
+.nav_father{
+    width: 100%;
+    height: 60px;
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 99;
+}
+.nav{
+    width: 1200px;
+    height: 60px;
+    margin:0 auto;
+}
+.nav .logo{
+    height: 100%;
+    width: 220px;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+}
+.nav .logo h1{
+    color: white;
+    line-height: 60px;
+    font-size: 24px;
+}
+.nav .logo h1 img{
+    width: 200px;
+}
+.nav .menu{
+    width: 400px;
+    height: 60px;
+    float: left;
+    color:white;
+    font-size:20px;
+    text-align: center;
+}
+.nav .menu ul li{
+    width: 80px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    box-sizing:border-box;
+}
+.nav .search{
+    height: 100%;
+    width: 320px;
+    box-sizing: border-box;
+    float: right;
+}
+.nav .search .input{
+    background:none;
+    width: 242px;
+    height: 32px;
+    float: left;
+    margin:12px 0 auto 0;
+    border:solid 1px white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.nav .search .search-button{
+    width: 50px;
+    height: 36px;
+    background:transparent url("../images/search.png") no-repeat 10px;
+    background-size: 30px 30px;
+    border:solid 1px white;
+    margin-top:12px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px;
+}
+.nav .search a:hover>.search-button{
+    background:transparent url("../images/search-after.png") no-repeat 10px;
+    background-size: 30px 30px;
+    cursor: pointer;
+}
+.nav .login{
+    height: 100%;
+    width: 200px;
+    float: right;
+}
+.nav .login .login_ul{
+    width: 180px;
+    height: 40px;
+    margin: 10px auto;
+    text-align: center;
+}
+.nav .login .login_ul li{
+    float: left;
+    width: 60px;
+    height: 30px;
+    font-size:20px;
+    text-align: center;
+    color: white;
+    border:solid 1px white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top:5px;
+    margin-left:28px;
+    line-height: 30px;
+
+}
+.nav .login .login_ul li:hover{
+    background-color: rgba(0, 0, 0, 0.51);
+}
+.nav .login .login_ul li a{
+    width: 100%;
+    display: block;
+}
+/*---------------------------------------------------*/
+
+
+
+/*----------------------footer-----------------------*/
+footer{
+	margin-top: 20px;
+	text-decoration: none;
+	background-image: url("../images/body.png");
+}
+.footer_container{ position: relative; width: 1240px; border-top: 1px solid #d7d7d7; text-align: center; padding: 15px 0 30px; margin-left:auto; margin-right:auto; }
+.about-yiban{ font-size: 13px; margin: 6px 0; }
+.about-yiban a{ font-size: 14px; color: #033333; padding: 8px; }
+.about-yiban a:hover{ color: #00afc7; text-decoration: none; }
+.about-yiban span{ color: #e8e8e8; }
+.yiban-brand{ margin-top: 15px; margin-bottom: 15px; }
+.yiban-brand a.icon{ margin-left: 7px; display: inline-block; border: 1px solid #ddd; vertical-align: middle; }
+.yiban-brand a.icon:hover{ border-color: #00A5ED; }
+.brand-_youke,.brand_yiban,.brand_k,.brand_boya,.brand_zz,.brand_hetaoshu{
+    background: url("../images/footer/footer-brand.png") no-repeat;
+    width: 112px;
+    height: 40px;
+}
+.brand-_youke{ background-position: 2px -6px; }
+.brand_yiban{ background-position: 2px -58px; }
+.brand_k{ background-position: 2px -112px; }
+.brand_boya{ background-position: 0 -161px; }
+.brand_zz{ background-position: 0 -214px; }
+.brand_hetaoshu{ background-position: 2px -265px; }
+.yiban-logal .copyright{ letter-spacing:1px; margin-left:10px; line-height: 24px; }
+.yiban-logal .copyright a{color:#324f68; transition: all 0.2s ease-in-out;}
+.yiban-logal .copyright a:hover{color:deepskyblue;}
+.yiban-logal .copyright a.jubao{ margin-right: 33px; }
+/*----------------------end-----------------------*/
+

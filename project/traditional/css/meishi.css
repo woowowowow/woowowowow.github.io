@@ -1,0 +1,193 @@
+.banner{
+    width: 100%;
+    height: 600px;
+    margin:0 auto;
+    background: url("../images/meishi/banner_bg.jpg") center no-repeat;
+    background-size: cover;
+    padding:85px auto 15px;
+}
+.banner .banner_body{
+    position:relative;
+    top:85px;
+    width: 1170px;
+    height: 485px;
+    margin: auto auto 15px;
+    overflow: hidden;
+}
+.banner .banner_body .ban{
+    overflow: hidden;
+}
+.banner .banner_body .ban1{
+    position:absolute;
+    width: 490px;
+    height: 485px;
+}
+.banner .banner_body .ban2{
+    position:absolute;
+    left:510px;
+    width: 320px;
+    height: 485px;
+}
+.banner .banner_body .ban2 img{
+
+}
+.banner .banner_body .ban3{
+    position:absolute;
+    right:0;
+    width: 315px;
+    height: 235px;
+}
+.banner .banner_body .ban4{
+    position:absolute;
+    top:250px;
+    right:0;
+    width: 315px;
+    height: 235px;
+}
+.banner .banner_body .ban4 img{
+
+}
+.banner .banner_body img{
+    width: 100%;
+    position:absolute;
+}
+.banner .banner_body .i_mask{
+    position:absolute;
+    bottom:-80px;
+    width: 100%;
+    height: 120px;
+    font-size:16px;
+    background-color: rgba(0,0,0,0.5);
+    transition:bottom 0.2s ease-in-out;
+}
+.banner .banner_body .i_mask h3{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 1em;
+    border-bottom:solid 1px black;
+    box-sizing: border-box;
+}
+.banner .banner_body .ban:hover .i_mask{
+    bottom:0;
+}
+.banner .banner_body .i_mask .b_link{
+    width: 100%;
+    height: 80px;
+}
+.banner .banner_body .i_mask .b_link a{
+    display:block;
+    width: 100%;
+    height: 40px;
+    border:solid 1px transparent;
+    transition: background-color 0.2s linear;
+}
+.banner .banner_body .i_mask .b_link a:hover{
+    background-color: rgba(87, 87, 87, 0.5);
+}
+.banner .banner_body .i_mask .b_link .li{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius:5px;
+    background-color: red;
+    margin: 15px 15px;
+}
+.banner .banner_body .i_mask .b_link .link_content{
+    position:relative;
+    top:-40px;
+    text-indent: 2em;
+    line-height: 40px;
+    display: block;
+}
+
+
+
+.content{
+	width: 1200px;
+	height: 1550px;
+	margin: 20px auto 0;
+}
+.content .con{
+    width: 100%;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 10px;
+    border:solid 1px #a9a9a9;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.content .con .con_img{
+    width: 25%;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+}
+.content .con .con_img img{
+    width:100%;
+    height: 100%;
+    transition: all 0.6s;
+}
+.content .con .con_img img:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+}
+.content .con .middle{
+    float: left;
+    width: 75%;
+    height: 250px;
+    overflow: hidden;
+}
+.content .con .middle h2{
+	margin-top: 10px;
+	margin-left: 10px;
+	font-size: 20px
+}
+.content .con .middle h2 a{
+    color:black;
+}
+.content .con .middle p{
+	font-size: 18px;
+	margin-top: 30px;
+	margin-left: 20px;
+	text-indent: 2em;
+	line-height: 30px;
+}
+.dao2{
+    width: 90%;
+    height: 60px;
+    text-align: center;
+    border-bottom:solid 1px #5AA628;
+	margin: 0 auto;
+}
+.dao2 .zi{
+    float: left;
+    margin-left:50px;
+}
+.dao2 .zi a{
+    color:#5AA628;
+}
+.dao2 li{
+    float: left;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.dao2 .one1{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+	margin-left:10px;
+}
+.dao2 .cssh_more1{
+    float: right;
+    width: 70px;
+    height: 26px;
+    margin-top: 30px;
+    margin-right:30px;
+    font-size:18px;
+    border-radius:5px;
+    background-color: #5AA628;
+    color: whitesmoke;
+    line-height: 26px;
+}
+

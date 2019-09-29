@@ -1,0 +1,301 @@
+﻿.banner{
+    height:450px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background: url("../images/shuhua/2223.png") no-repeat center;
+    overflow: hidden;
+}
+.banner .left_tit{
+    float: left;
+    width: 20%;
+    height:413px;
+    margin-right: 100px;
+
+}
+.banner .left_tit .img{
+    width:126px;
+    height:413px;
+}
+.banner .right_tit {
+    width: 56%;
+    height: 348px;
+    float: right;
+    background: url("../images/shuhua/666.png") no-repeat 0 0;
+    margin-top: 100px;
+    margin-right: 100px;
+    overflow: hidden;
+}
+
+.banner .right_tit .list{
+    margin-left: 50px;
+ }
+.banner .right_tit .list li{
+    float: left;
+    writing-mode: tb-rl;
+    -webkit-writing-mode: tb-rl;
+    font-size: 18px;
+    color: #151515;
+    line-height:60px;
+    letter-spacing: 5px;
+    margin-top: 120px;
+}
+.banner .right_tit .list li a{
+    color:black;
+}
+.banner .right_tit li a:hover{
+    color: #e82c07;
+    cursor: pointer;
+}
+.banner .right_tit .Tu{
+    height: 140px;
+    width:423px;
+    margin-left: 50px;
+    margin-top: 165px;
+}
+.banner .right_tit .Tu img{
+    float: left;
+    height:133px;
+    width:55px;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+.banner .right_tit img{
+    margin-left:100px;
+    margin-top: 10px;
+    height: 85%;
+}
+
+/*--------------------内容区域---------------------*/
+.content{
+    height:1280px;
+    width: 1300px;
+    margin: 0 auto;
+    clear: both;
+}
+.content .top{
+    width: 100%;
+    height: 100px;
+    background: url("../images/shuhua/iyuan.png") no-repeat center top 40px;
+    text-align: center;
+    border-bottom:solid 1px #5AA628;
+}
+.top .zi{
+    float: left;
+    margin-left:50px;
+    color: #5AA628;
+}
+.top li{
+    float: left;
+    font-size: 14px;
+    margin-top: 80px;
+}
+.top li a{
+    color:#5AA628;
+}
+.top .one1{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.top .cssh_more1{
+    float: right;
+    width: 70px;
+    height: 26px;
+    background-color: #5AA628;
+    color: whitesmoke;
+    border-radius:5px;
+    font-size:18px;
+    line-height: 26px;
+    margin-top: 70px;
+    margin-right:30px;
+}
+.content .middle{
+    height:550px;
+    width: 100%;
+}
+
+.content .middle .shang_father{
+    height: 320px;
+    width: 100%;
+    clear:both;
+}
+.content .middle .shang li{
+    float: left;
+    width: 257px;
+    height: 240px;
+    border-radius: 5px;
+    margin-left: 54px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.middle .shang a{
+    display:block;
+    width: 100%;
+    height: 240px;
+}
+.middle .shang a img{
+    width:257px;
+    height: 220px;
+}
+.middle .shang .jjj{
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    color: white;
+    background-color:rgba(0,0,0,0.5);
+}
+.middle .shang a:hover .jjj{
+    background-color: rgba(40, 255, 49, 0.4);
+}
+.content .middle .xia_father{
+    width: 100%;
+    height: 230px;
+    clear: both;
+}
+.content .middle .xia li{
+    float: left;
+    width: 350px;
+    height:160px;
+    border-radius: 5px;
+    margin-left: 60px;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.middle .xia a img{
+    float: left;
+    width: 130px;
+    height: 160px;
+    transition: transform 0.3s linear;
+}
+.middle .xia a img:hover{
+    transform: scale(1.1);
+}
+.middle .xia .zi{
+    float: left;
+    width: 200px;
+    height: 140px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.content .middle_lower{
+    width: 100%;
+    height: 100px;
+    background: url("../images/shuhua/iyuan.png") no-repeat center top 40px;
+    text-align: center;
+    border-bottom:solid 1px #5AA628;
+}
+.middle_lower .zi1{
+    float: left;
+    margin-left: 50px;
+    color: #5AA628;
+}
+.middle_lower li{
+    float: left;
+    font-size: 14px;
+    margin-top: 80px;
+}
+.middle_lower li a{
+    color:#5AA628;
+}
+.middle_lower .one1{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+.middle_lower .cssh_more2{
+    float: right;
+    width: 70px;
+    height: 26px;
+    border-radius:5px;
+    background-color: #5AA628;
+    color: whitesmoke;
+    font-size:20px;
+    line-height: 26px;
+    margin-top: 70px;
+    margin-right:30px;
+}
+.content .lower{
+    height: 550px;
+    width: 100%;
+}
+.content .lower .shang1_father{
+    height: 320px;
+    width: 100%;
+    clear:both;
+}
+.content .lower .shang1 li{
+    float: left;
+    width: 257px;
+    height: 239px;
+    border-radius: 5px;
+    margin-left: 54px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+.lower .shang1 a img{
+    width:257px;
+    height: 220px;
+}
+.lower .shang1 .jjj{
+    text-align: center;
+    color: white;
+    height: 20px;
+    line-height: 20px;
+    background-color:rgba(0,0,0,0.5);
+}
+.lower .shang1 a:hover .jjj{
+    background-color: rgba(40, 255, 49, 0.4);
+}
+.content .lower .xia1_father{
+    width: 100%;
+    height: 230px;
+    clear: both;
+}
+.content .lower .xia1 li{
+    float: left;
+    width: 350px;
+    height:160px;
+    border-radius: 5px;
+    margin-left: 60px;
+    margin-top: 30px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+}
+.content .lower .xia1 li a{
+    float: left;
+}
+.lower .xia1 a img{
+    width: 130px;
+    height: 160px;
+    transition: transform 0.3s linear;
+}
+.lower .xia1 a img:hover{
+    transform:scale(1.1);
+}
+.lower .xia1 .zi{
+    float: left;
+    width: 170px;
+    height: 170px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.content .more_load{
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+
+    margin-top: 50px;
+    border-bottom:solid 1px #5AA628;
+}
+.content .more_load .hh{
+    margin-left: 600px;
+}
