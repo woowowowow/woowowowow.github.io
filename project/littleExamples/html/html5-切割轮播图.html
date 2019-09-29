@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>切换轮播图</title>
+    <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .view{
+            width: 560px;
+            height: 300px;
+            margin: 100px auto;
+            position: relative;
+        }
+        ul{
+            width: 100%;
+            height: 100%;
+            list-style: none;
+            /*transform: rotate3d(1,1,0,-30deg);*/
+            transform-style: preserve-3d;
+        }
+        ul li{
+            width: 20%;
+            height: 100%;
+            /*background-color: #ccc;*/
+            float: left;
+            position: relative;
+            transform-style: preserve-3d;
+            /*添加过渡效果*/
+            transition: transform 0.5s;
+        }
+        ul li span{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        ul li span:nth-of-type(1){
+            background: url("../images/qiegetu/q1.jpg");
+            transform: translateZ(150px);
+        }
+        ul li span:nth-of-type(2){
+            background: url("../images/qiegetu/q2.jpg");
+            transform: translateY(-150px) rotateX(90deg);
+        }
+        ul li span:nth-of-type(3){
+            background: url("../images/qiegetu/q3.jpg");
+            transform: translateZ(-150px) rotateX(180deg);
+        }
+        ul li span:nth-of-type(4){
+            background: url("../images/qiegetu/q4.jpg");
+            transform: translateY(150px) rotateX(-90deg);
+        }
+        /*设置每一个li元素的span所显示的图片的位置*/
+        ul li:nth-of-type(2) span{
+            background-position: -100% 0;/*偏移当前li元素的全部宽度*/
+        }
+        ul li:nth-of-type(3) span{
+            background-position: -200% 0;
+        }
+        ul li:nth-of-type(4) span{
+            background-position: -300% 0;
+        }
+        ul li:nth-of-type(5) span{
+            background-position: -400% 0;
+        }
+
+        .pre,.next{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            /*margin-top: -50%;*/
+            background-color: rgba(0,0,0,0.5);
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            font-size: 40px;
+            text-decoration: none;
+        }
+        .pre{
+            left: 0;
+        }
+        .next{
+            right: 0;
+        }
+    </style>
+    <script src="../js/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+<div class="view">
+    <ul>
+        <li>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+        <li>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </li>
+    </ul>
+    <a href="#" class="pre"><</a>
+    <a href="#" class="next">></a>
+</div>
+<script>
+    $(function(){
+        /*定义图片索引*/
+        var index=0;
+        /*添加节流阀  如果是true,说明本次单击会有响应处理*;设置节流阀目的：处理多次单击问题*/
+        var flag=true;
+        /*下一张*/
+       $(".next").on("click",function(){
+
+           if(flag==true){
+               /*设置节流阀*/
+               flag=false;
+               index--;
+               $("li").each(function(key,value){
+                   /*key 遍历li 元素 从0-4；*/
+                   $(this).css({
+                       "transform":"rotateX("+(index*90)+"deg)",
+                       "transition-delay":(key*0.1)+"s"
+                   });
+               });
+               setTimeout(function(){
+                   flag=true;
+               },1000);
+           }
+       });
+
+       /*上一张*/
+        $(".pre").on("click",function(){
+            if(flag==true){
+                /*设置节流阀*/
+                flag=false;
+                index++;
+                $("li").each(function(key,value){
+                    /*key 遍历li 元素 从0-4；*/
+                    $(this).css({
+                        "transform":"rotateX("+(index*90)+"deg)",
+                        "transition-delay":(key*0.1)+"s"
+                    });
+                });
+                setTimeout(function(){
+                    flag=true;
+                },1000);
+            }
+        });
+    });
+</script>
+</body>
+</html>

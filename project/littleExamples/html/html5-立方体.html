@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            animation: move 3s infinite linear;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        @keyframes move  {
+            from{
+                transform: rotate3d(0,1,0,0deg);
+            }
+            to{
+                transform: rotate3d(1,2,0,360deg);
+            }
+        }
+        .box div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            opacity: 0.7;
+        }
+        .front{
+            background-color: #2affaa;
+            transform: translateZ(100px);
+        }
+        .back{
+            background-color: #ffe450;
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+        .left{
+            background-color: #3dafff;
+            transform: translateX(-100px) rotateY(-90deg);
+        }
+        .right{
+            background-color: #ffb6f4;
+            transform: translateX(100px) rotateY(90deg);
+        }
+        .top{
+            background-color: #ff9688;
+            transform: translateY(-100px) rotateX(90deg);
+        }
+        .bottom{
+            background-color: #ff0005;
+            transform: translateY(100px) rotateX(-90deg);
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="front">front</div>
+    <div class="back">back</div>
+    <div class="left">left</div>
+    <div class="right">right</div>
+    <div class="top">top</div>
+    <div class="bottom">bottom</div>
+</div>
+</body>
+</html>
