@@ -83,6 +83,7 @@ body{
     height: 32px;
     float: left;
     margin:12px 0 auto 0;
+    padding-left: 10px;
     border:solid 1px white;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
