@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/index.css">
     <!--图标-->
     <link rel="shortcut icon" href="../images/china.ico">
-    <script src="../js/jquery-3.3.1.js" ></script>
+    <script src="../js/jquery-3.3.1.js"></script>
 
 </head>
 <body>
@@ -33,7 +33,8 @@
                 </ul>
             </div>
             <div class="search">
-                <input type="text" class="input" value="搜索关键词..." onfocus="if(this.value==='搜索关键词...'){this.value=''}" onblur="if(this.value===''){this.value='搜索关键词...'}" style="color:white;">
+                <input type="text" class="input" value="搜索关键词..." onfocus="if(this.value==='搜索关键词...'){this.value=''}"
+                       onblur="if(this.value===''){this.value='搜索关键词...'}" style="color:white;">
                 <a href="#">
                     <input type="submit" class="search-button" value="">
                 </a>
@@ -42,17 +43,6 @@
     </div>
     <div class="zhanwei"></div>
     <div class="banner">
-        <div class="banner_left">
-            <img src="../images/index/故宫-1.jpg" alt="故宫背景"/>
-            <div class="ul_father"></div>
-            <ul class="category">
-                    <li><a href="index.html"><span>首页</span></a></li>
-                    <li><a href="hanfu.html" target="_blank"><span>初&nbsp;识&nbsp;汉&nbsp;服</span></a></li>
-                    <li><a href="gushiwen.html" target="_blank"><span>魅&nbsp;力&nbsp;诗&nbsp;词</span></a></li>
-                    <li><a href="shuhua.html" target="_blank"><span>古&nbsp;逸&nbsp;书&nbsp;画</span></a></li>
-                    <li id="last_child"><a href="meishi.html" target="_blank"><span>传&nbsp;统&nbsp;美&nbsp;食</span></a></li>
-            </ul>
-        </div>
         <div class="banner_right">
             <div id="wrap">
                 <a href="#" class="hb" style="transform: translate3d(-754px, 0px, 0px);">
@@ -67,8 +57,6 @@
                 <div class="fullBg">
                     <img src="../images/index/汉服_2.jpg" alt="">
                 </div>
-
-
                 <a href="#" class="hb" style="transform: translate3d(-753.988px, 0px, 0px);">
                     <div class="c">
                         <img src="../images/index/古画_1.jpg" alt="">
@@ -81,8 +69,6 @@
                 <div class="fullBg">
                     <img src="../images/index/古画_1.jpg" alt="">
                 </div>
-
-
                 <a href="#" class="hb" style="transform: translate3d(-753.988px, 0px, 0px);">
                     <div class="c">
                         <img src="../images/index/古诗_1.jpg" alt="">
@@ -95,8 +81,6 @@
                 <div class="fullBg">
                     <img src="../images/index/古诗_1.jpg" alt="">
                 </div>
-
-
                 <a href="#" class="hb" style="transform: translate3d(-753.988px, 0px, 0px);">
                     <div class="c">
                         <img src="../images/index/美食_1.jpg" alt="">
@@ -111,27 +95,37 @@
                 </div>
             </div>
             <script type="text/javascript">
-                $(document).ready(function(){
+                $(document).ready(function () {
                     var docWidth = $('body').width(),
                         $wrap = $('#wrap'),
                         $images = $('#wrap .hb'),
                         slidesWidth = $wrap.width();
-                    $(window).on('resize', function(){
+                    $(window).on('resize', function () {
                         docWidth = $('body').width();
                         slidesWidth = $wrap.width();
                     });
 
-                    $(document).mousemove(function(e) {
-                        var mouseX = e.pageX-1000,
-                            offset = mouseX / docWidth * slidesWidth - mouseX / 2 ;
+                    $(document).mousemove(function (e) {
+                        var mouseX = e.pageX - 1000,
+                            offset = mouseX / docWidth * slidesWidth - mouseX / 2;
 
                         $images.css({
-                            '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
-                            'transform': 'translate3d(' + -offset + 'px,0,0)'
+                            '-webkit-transform': 'translateX(' + -offset + 'px)',
+                            'transform': 'translateX(' + -offset + 'px)'
                         });
                     });
                 });
             </script>
+        </div>
+        <div class="banner_left">
+            <!--<img src="../images/index/故宫-1.jpg" alt="故宫背景"/>-->
+            <ul class="category">
+                <li><a href="index.html"><span>首页</span></a></li>
+                <li><a href="hanfu.html" target="_blank"><span>初&nbsp;识&nbsp;汉&nbsp;服</span></a></li>
+                <li><a href="gushiwen.html" target="_blank"><span>魅&nbsp;力&nbsp;诗&nbsp;词</span></a></li>
+                <li><a href="shuhua.html" target="_blank"><span>古&nbsp;逸&nbsp;书&nbsp;画</span></a></li>
+                <li id="last_child"><a href="meishi.html" target="_blank"><span>传&nbsp;统&nbsp;美&nbsp;食</span></a></li>
+            </ul>
         </div>
     </div>
 </div>
@@ -279,7 +273,8 @@
                                 <h3><a href="#">在习主席一带一路的活动中，中书协刘福友老师作品作为国礼赠送
                                 </a></h3><br/>
                                 <p>
-                                    在习主席一带一路的活动中，中书协刘福友老师书法作品：（高瞻远瞩）（厚德载物）（高瞻远瞩）（室雅兰香）分别由外交部，新闻部长作为国礼赠与：斯里兰卡驻华大使鲁纳塞纳 • 科迪图瓦阁下、墨西哥信任驻华大使内尔纳先生、菲律宾驻华大使罗马纳先生、巴基斯坦驻华大使马苏德 • 哈立德先生收藏！</p>
+                                    在习主席一带一路的活动中，中书协刘福友老师书法作品：（高瞻远瞩）（厚德载物）（高瞻远瞩）（室雅兰香）分别由外交部，新闻部长作为国礼赠与：斯里兰卡驻华大使鲁纳塞纳 •
+                                    科迪图瓦阁下、墨西哥信任驻华大使内尔纳先生、菲律宾驻华大使罗马纳先生、巴基斯坦驻华大使马苏德 • 哈立德先生收藏！</p>
                             </div>
                         </li>
                     </ul>
@@ -382,7 +377,7 @@
         </div>
         <div class="yiban-logal">
             <p class="copyright" style="color: #324f68 !important;font-size: 13px !important;">
-                违法和不良信息举报电话：021-6016000    Copyright &copy 2009-2019
+                违法和不良信息举报电话：021-6016000 Copyright &copy 2009-2019
                 <a href="#">YIBAN</a>
                 . All Rights Reserved.
                 <a href="#" target="_blank">沪ICP备15046050号-6</a>
@@ -391,9 +386,12 @@
                 上海易班企业发展有限公司 版权所有
             </p>
             <p class="copyright" style="margin-top: 15px;">
-                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-1.png" title="中国互联网违法和不良信息举报中心"></a>
-                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-2.jpg" style="height:36px;" title="网上有害信息举报专区"></a>
-                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-3.png" title="上海市互联网违法和不良信息举报中心"></a>
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-1.png"
+                                                               title="中国互联网违法和不良信息举报中心"></a>
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-2.jpg"
+                                                               style="height:36px;" title="网上有害信息举报专区"></a>
+                <a href="#" class="jubao" target="_blank"><img src="../images/footer/footer-last-3.png"
+                                                               title="上海市互联网违法和不良信息举报中心"></a>
             </p>
         </div>
     </div>
